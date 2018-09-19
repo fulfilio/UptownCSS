@@ -11,8 +11,8 @@ input[type="button"] {
   min-width: 3.6rem;
   margin: 0;
   padding: .7rem 1.6rem;
-  background: linear-gradient(180deg,#6371c7,#5563c1);
-  border: .1rem solid #3f4eae;
+  background: linear-gradient(180deg,#2e9ce6,#007ace);
+  border: .1rem solid #0073bf;
   box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22,29,37,.05), 0 0 0 0 transparent;
   color: #fff;
   fill: #fff;
@@ -27,7 +27,7 @@ input[type="button"] {
   cursor: pointer;
   white-space: nowrap;
   text-transform: none;
-  font-family: -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
   vertical-align: middle;
   user-select: none;
@@ -35,8 +35,8 @@ input[type="button"] {
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    background: linear-gradient(180deg,#5c6ac4,#4959bd);
-    border-color: #3f4eae;
+    background: linear-gradient(180deg,#027bcc,#0071bd);
+    border-color: #0073bf;
     text-decoration: none;
     color: #fff;
     fill: #fff;
@@ -53,7 +53,7 @@ input[type="button"] {
     text-decoration: none;
     color: #fff;
     fill: #fff;
-    background: linear-gradient(180deg,#3f4eae,#3f4eae);
+    background: linear-gradient(180deg,#0073bf,#0073bf);
     border-color: #38469b;
     box-shadow: inset 0 0 0 0 transparent, 0 1px 0 0 rgba(22,29,37,.05), 0 0 1px 0 #38469b;
   }
@@ -73,9 +73,9 @@ input[type="button"] {
     &:focus {
       fill: #637381;
       color: #212b36;
-      border-color: #5c6ac4;
+      border-color: #027bcc;
       outline: 0;
-      box-shadow: 0 0 0 1px #5c6ac4;
+      box-shadow: 0 0 0 1px #027bcc;
     }
     &:active {
       fill: #637381;
@@ -112,7 +112,7 @@ input[type="button"] {
     box-shadow: none;
     text-decoration: none;
 
-    color: #5c6ac4;
+    color: #027bcc;
     transition: color .24s cubic-bezier(.64,0,.35,1);
 
     &:hover {
@@ -123,7 +123,7 @@ input[type="button"] {
       text-decoration: underline;
     }
     &:active {
-      color: #5c6ac4;
+      color: #027bcc;
     }
   }
   &.disabled,

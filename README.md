@@ -7,6 +7,13 @@ Getting Started
 Add the stylesheet to your project and begin writing the HTML for your app:
 `<link rel="stylesheet" href="uptown.css">`
 
+Building
+--------
+
+`gem install sass`
+
+`sass --watch styles/uptown.scss:css/uptown.css`
+
 Documentation
 ---------------------
 Visit http://www.uptowncss.com for complete documentation and examples
