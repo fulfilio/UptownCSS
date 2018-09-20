@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby
+    working_directory: ~/UptownCSS
+    steps:
+      - checkout
+      - run:
+          name: Install sass
+          command: sudo gem install sass
+      - run:
+          name: Build the css file
+          command: |
+            mkdir ~/css
+            sass styles/uptown.scss ~/css/uptown.css
+      - deploy:
+          name: Deploy to S3
+          command: |
+            sudo apt-get install python-pip
+            sudo pip install awscli
+            aws s3 sync ~/css s3://public-fulfil-io/assets/libs/polaris-uptown/latest --delete
